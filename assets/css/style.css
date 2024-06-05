@@ -336,7 +336,7 @@ h6,
 --------------------------------------------------------------*/
 /* Custom Navmenu */
 .custom-navmenu {
-  background: #0d1e2d;
+  background: #FFC759;
 }
 
 .custom-navmenu .custom-menu,
@@ -385,6 +385,7 @@ h6,
 .custom-navbar {
   padding-top: 50px;
   width: 100%;
+  background-color: #FFC759;
 }
 
 @media (max-width: 780px) {
