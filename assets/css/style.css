@@ -352,7 +352,7 @@ h6,
 }
 
 .custom-navmenu .custom-menu li a {
-  color: #fff;
+  color: #094074;
   padding: 10px 0 !important;
 }
 
@@ -366,15 +366,15 @@ h6,
 
 .custom-navmenu h3 {
   font-size: 20px;
-  color: #fff;
+  color: #094074;
 }
 
 .custom-navmenu p {
-  color: rgba(255, 255, 255, 0.6);
+  color: #3C6997;
 }
 
 .custom-navmenu a {
-  color: rgba(255, 255, 255, 0.7);
+  color: #FF6B35;
 }
 
 .custom-navmenu a:hover {
@@ -397,6 +397,7 @@ h6,
 
 .custom-navbar .navbar-brand {
   font-size: 1.7rem;
+  color: #094074;
 }
 
 /* Burger */
@@ -501,4 +502,9 @@ h6,
 
 .social a:hover {
   color: #000;
+}
+
+::selection {
+  color: white;
+  background: #FF6B35;
 }
