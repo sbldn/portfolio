@@ -173,10 +173,13 @@ h6,
 
 .h3 {
   font-size: 20px;
+  font-weight: bold;
+
 }
 
 .h4 {
   font-size: 16px;
+  font-weight: bold;
 }
 
 .heading {
@@ -277,6 +280,11 @@ h6,
 
 .services h4 {
   padding-top: 10px;
+}
+
+.services {
+  padding-bottom: 100px;
+  padding-top: unset;
 }
 
 /* Contact Form */
