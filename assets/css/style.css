@@ -292,20 +292,23 @@ h6,
 .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #FF6B35;
   text-align: left;
   padding: 15px;
   font-weight: 600;
+  
 }
 
 .php-email-form .error-message br+br {
   margin-top: 25px;
+  display: none;
+
 }
 
 .php-email-form .sent-message {
   display: none;
-  color: #fff;
-  background: #18d26e;
+  color: #094074;
+  background: #FFC759;
   text-align: center;
   padding: 15px;
   font-weight: 600;

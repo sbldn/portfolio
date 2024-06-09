@@ -32,6 +32,22 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .sent-message {
+        color: green;
+        display: none;
+    }
+
+    .error-message {
+        color: red;
+        display: none;
+    }
+
+    .loading {
+        display: none;
+    }
+</style>
+
 </head>
 
 <body>
@@ -89,8 +105,13 @@
 
         <div class="row">
           <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form
+            id="contact-form"
+  action="https://formspree.io/f/xzbnnbvz"
+  method="POST"
+  class="php-email-form"
+>
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
 
               <div class="row gy-3">
                 <div class="col-md-6 form-group">
@@ -189,6 +210,32 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var form = event.target;
+        var formData = new FormData(form);
+    
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", form.action, true);
+        xhr.setRequestHeader("Accept", "application/json");
+    
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                document.querySelector(".sent-message").style.display = "block";
+                document.querySelector(".error-message").style.display = "none";
+                form.reset(); // Limpia el formulario
+            } else {
+                document.querySelector(".error-message").style.display = "block";
+                document.querySelector(".sent-message").style.display = "none";
+            }
+        };
+    
+        xhr.send(formData);
+    });
+    </script>
+
 
 </body>
 
